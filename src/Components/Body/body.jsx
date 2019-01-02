@@ -19,20 +19,17 @@ class Body extends Component {
               <a href="mailto:name@email.com">lucasgouvea93@gmail.com</a>
             </div>
             <p className="lead mb-5">
-              I am experienced in leveraging agile frameworks to provide a
-              robust synopsis for high level overviews. Iterative approaches to
-              corporate strategy foster collaborative thinking to further the
-              overall value proposition.
+              About to graduate Computer Engineer, seeking new challenges and
+              passionate for Software Development involving new technologies.
+              Capable of learn fast new frameworks. Self-taught, aiming to
+              become a software engineer.
             </p>
             <div className="social-icons">
-              <a href="#">
+              <a href="https://www.linkedin.com/in/lucas-gouvea-56a288139/">
                 <i className="fab fa-linkedin-in" />
               </a>
-              <a href="#">
+              <a href="https://github.com/lucasgouvea">
                 <i className="fab fa-github" />
-              </a>
-              <a href="#">
-                <i className="fab fa-facebook-f" />
               </a>
             </div>
           </div>
@@ -50,7 +47,15 @@ class Body extends Component {
               <div className="resume-content mr-auto">
                 <h3 className="mb-0">Software Development Internship</h3>
                 <div className="subheading mb-3">FITec</div>
-                <p>blablabla</p>
+                <p>
+                  Worked on Ericsson's BSCS billing & rating system, developing
+                  features and writing automated tests.
+                </p>
+                <p>
+                  Fullstack developer and architect of FITFaces, a new internal
+                  tool to the company.
+                </p>
+                <p />
               </div>
               <div className="resume-date text-md-right">
                 <span className="text-primary">July 2018 - Present</span>
@@ -91,62 +96,22 @@ class Body extends Component {
           <div className="my-auto">
             <h2 className="mb-5">Skills</h2>
 
-            <div className="subheading mb-3">
-              Programming Languages &amp; Tools
-            </div>
-            <ul className="list-inline dev-icons">
-              <li className="list-inline-item">
-                <i className="fab fa-html5" />
-              </li>
-              {/*               <li className="list-inline-item">
-                <i className="fab fa-css3-alt" />
-              </li> */}
-              <li className="list-inline-item">
-                <i className="fab fa-js-square" />
-              </li>
-              {/*               <li className="list-inline-item">
-                <i className="fab fa-angular" />
-              </li> */}
-              <li className="list-inline-item">
-                <i className="fab fa-react" />
-              </li>
-              <li className="list-inline-item">
-                <i className="fab fa-node" />
-              </li>
-              {/*               <li className="list-inline-item">
-                <i className="fab fa-sass" />
-              </li> */}
-              {/*               <li className="list-inline-item">
-                <i className="fab fa-less" />
-              </li> */}
-              {/*               <li className="list-inline-item">
-                <i className="fab fa-wordpress" />
-              </li> */}
-              {/*               <li className="list-inline-item">
-                <i className="fab fa-gulp" />
-              </li> */}
-              {/*               <li className="list-inline-item">
-                <i className="fab fa-grunt" />
-              </li> */}
-              <li className="list-inline-item">
-                <i className="fab fa-npm" />
-              </li>
-              <li className="list-inline-item">
-                <i className="fab fa-git" />
-              </li>
-            </ul>
-
             <div className="subheading mb-3">Languages and technologies</div>
             <ul className="fa-ul mb-0">
               <li>
                 <i className="fa-li fa fa-check" />
-                Java (Spring boot, JPA, hibernate)
+                Java: Spring Boot, JPA, Hibernate
               </li>
               <li>
                 <i className="fa-li fa fa-check" />
-                Javascript (AngularJS, NodeJS, ReactJS, NPM)
+                Javascript: NodeJS, AngularJS, ReactJS, NPM
+              </li>
+              <li>
+                <i className="fa-li fa fa-check" />
+                Tools: Git, Maven, Jenkins
               </li>
             </ul>
+            <div className="subheading mb-3" />
           </div>
         </section>
 
@@ -157,18 +122,8 @@ class Body extends Component {
         >
           <div className="my-auto">
             <h2 className="mb-5">Interests</h2>
-            <p>
-              Apart from being a web developer, I enjoy most of my time being
-              outdoors. In the winter, I am an avid skier and novice ice
-              climber. During the warmer months here in Colorado, I enjoy
-              mountain biking, free climbing, and kayaking.
-            </p>
-            <p className="mb-0">
-              When forced indoors, I follow a number of sci-fi and fantasy genre
-              movies and television shows, I am an aspiring chef, and I spend a
-              large amount of my free time exploring the latest technology
-              advancements in the front-end web development world.
-            </p>
+            <p>?</p>
+            <p className="mb-0">?</p>
           </div>
         </section>
       </div>
