@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import Tag from './tag';
+import React, { Component } from "react";
+import PropTypes from "prop-types";
+import Tag from "./tag";
 
 class SectionHeader extends Component {
   constructor(props) {
@@ -11,7 +11,7 @@ class SectionHeader extends Component {
   render() {
     const { headingLevel, titleStyle, title } = this.props;
     return (
-      <div>
+      <div class="section-header">
         <Tag headingLevel={headingLevel} style={titleStyle} title={title} />
       </div>
     );
@@ -21,8 +21,7 @@ class SectionHeader extends Component {
 SectionHeader.propTypes = {
   headingLevel: PropTypes.number.isRequired,
   title: PropTypes.string.isRequired,
-  titleStyle: PropTypes.string.isRequired,
-
+  titleStyle: PropTypes.string.isRequired
 };
 
 export default SectionHeader;

@@ -6,20 +6,23 @@ class SectionContent extends Component {
     this.state = {};
   }
 
-  renderContentList = contentList => {
-    let contentListArray = [];
-    contentList.forEach(content => {
-      contentListArray.push(
-        <ul className="fa-ul mb-0">
-          <li>
-            <i className="fa-li fa fa-check" />
-            {content}
+  renderContentListMap = contentListMap => {
+    let contentListArr = [];
+    for (let [key, val] of contentListMap.entries()) {
+      contentListArr.push(
+        <ul key={key} className="fa-ul mb-0">
+          <li className="list-item">
+            <i className="fa-li fa fa-check list-icon" />
+            <p>
+              <b>{key}</b> : {val}
+            </p>
           </li>
         </ul>
       );
-    });
-    return contentListArray;
+    }
+    return contentListArr;
   };
+
   renderSocialIcons = id => {
     if (id === "about") {
       return (
@@ -39,11 +42,16 @@ class SectionContent extends Component {
     }
   };
   render() {
-    const { id, content, contentList } = this.props;
+    const { id, content, contentListMap } = this.props;
+
+    let contentStyle;
+    if (contentListMap) {
+      contentStyle = "list-container";
+    }
     return (
-      <div>
+      <div className={contentStyle}>
         <p className="lead mb-5">{content}</p>
-        {contentList ? this.renderContentList(contentList) : <div />}
+        {contentListMap ? this.renderContentListMap(contentListMap) : <div />}
         {this.renderSocialIcons(id)}
       </div>
     );

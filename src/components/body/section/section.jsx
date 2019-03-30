@@ -10,10 +10,10 @@ class Section extends Component {
     this.state = {};
   }
   renderSubSections = subSections => {
-    let subSectionArray = [];
-    subSections.forEach(subSection => {
-      subSectionArray.push(
+    return subSections.map((subSection, key) => {
+      return (
         <SubSection
+          key={key}
           title={subSection.title}
           subtitle={subSection.subtitle}
           content={subSection.content}
@@ -21,7 +21,6 @@ class Section extends Component {
         />
       );
     });
-    return subSectionArray;
   };
   render() {
     const {
@@ -30,18 +29,22 @@ class Section extends Component {
       titleStyle,
       title,
       content,
-      contentList,
+      contentListMap,
       subSections
     } = this.props;
     return (
       <section className="resume-section p-3 p-lg-5 d-flex d-column" id={id}>
-        <div className="my-auto">
+        <div className="my-auto section-div">
           <SectionHeader
             headingLevel={headingLevel}
             titleStyle={titleStyle}
             title={title}
           />
-          <SectionContent id={id} content={content} contentList={contentList} />
+          <SectionContent
+            id={id}
+            content={content}
+            contentListMap={contentListMap}
+          />
           {subSections ? this.renderSubSections(subSections) : <div />}
         </div>
       </section>
@@ -50,11 +53,11 @@ class Section extends Component {
 }
 
 Section.propTypes = {
-  id: PropTypes.number.isRequired,
+  id: PropTypes.string.isRequired,
   headingLevel: PropTypes.number.isRequired,
   title: PropTypes.string.isRequired,
   titleStyle: PropTypes.string.isRequired,
-  content: PropTypes.string.isRequired
+  content: PropTypes.string
 };
 
 export default Section;

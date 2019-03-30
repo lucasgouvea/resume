@@ -18,10 +18,50 @@
   color: white;
 }
 
+.App-section-container {
+  width: "90%";
+}
+
 .App-link {
   color: #61dafb;
 }
 
+.navbar-round {
+  border-radius: 100%;
+}
+
+.section-div {
+  width: 100%;
+}
+
+.section-header {
+  margin-bottom: 7.5%;
+}
+
+.list-icon {
+  color: #d86f47;
+}
+
+.nav-profile {
+  margin-bottom: 15%;
+}
+
+b {
+  color: #d86f47;
+}
+
+li.list-item {
+  text-align: left;
+}
+
+li p {
+  margin-left: 9%;
+}
+
+.list-container {
+  margin: auto;
+  width: 50%;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

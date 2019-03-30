@@ -1,36 +1,9 @@
 import React, { Component } from "react";
 import Section from "./section/section";
+import skills from "../../skills.js";
+import experiences from "../../experience.js";
 
-const skills = [
-  "Java: Spring Boot, JPA, Hibernate",
-  "Javascript: NodeJS, AngularJS, ReactJS",
-  "Android: React Native",
-  "Tools: Git, Maven, Docker, Jenkins",
-  "Capable of quick deploying web apps on AWS using Node + React" + "+ Mongo",
-  "Capable of handling UNIX based systems"
-];
-
-const experiences = [
-  {
-    title: "Software Development Internship",
-    subtitle: "FITec - SJC",
-    content:
-      "Worked on Ericsson's BSCS billing & rating system, developing" +
-      "features and writing automated tests.Fullstack developer and architect" +
-      "of FITFaces, a new internal" +
-      "tool to the company.",
-    rightContent: "December 2019"
-  },
-  {
-    title: "Software Development Internship",
-    subtitle: "Hivelabs - Itajubá",
-    content:
-      "Fullstack mobile developer, using React Native & NodeJS. " +
-      "Responsible for bringing new technologies such as Docker into" +
-      "the development process.",
-    rightContent: "December 2019"
-  }
-];
+const skillsMap = new Map(skills);
 
 class Body extends Component {
   render() {
@@ -75,7 +48,7 @@ class Body extends Component {
           title="Skills"
           titleStyle="mb-5"
           headingLevel={2}
-          contentList={skills}
+          contentListMap={skillsMap}
         />
         <hr className="m-0" />
         <Section

@@ -10,9 +10,9 @@ class NavBar extends Component {
       >
         <a className="navbar-brand js-scroll-trigger" href="#page-top">
           <span className="d-block d-lg-none">Lucas Gouvea</span>
-          <span className="d-none d-lg-block">
+          <span className="d-none d-lg-block nav-profile">
             <img
-              className="img-fluid img-profile rounded-circle mx-auto mb-2"
+              className="img-fluid img-profile rounded-circle mx-auto"
               src={profile}
               alt=""
             />
@@ -29,7 +29,10 @@ class NavBar extends Component {
         >
           <span className="navbar-toggler-icon" />
         </button>
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <div
+          className="collapse navbar-collapse nav-items"
+          id="navbarSupportedContent"
+        >
           <ul className="navbar-nav">
             <li className="nav-item">
               <a className="nav-link js-scroll-trigger" href="#about">
